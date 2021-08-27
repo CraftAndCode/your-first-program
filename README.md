@@ -1,31 +1,59 @@
+# Your First Program
+### @flyoutOnly true
+```template
+basic.forever(function () {
+	
+})
 
-> Open this page at [https://craftandcode.github.io/your-first-program/](https://craftandcode.github.io/your-first-program/)
+```
 
-## Use as Extension
+```blocks
+basic.showString("Hello!")
 
-This repository can be added as an **extension** in MakeCode.
+```
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/craftandcode/your-first-program** and import
 
-## Edit this project ![Build status badge](https://github.com/craftandcode/your-first-program/workflows/MakeCode/badge.svg)
+## Step 0 @showDialog
 
-To edit this repository in MakeCode.
+Hello! Let's write our first program for Micro:bit!
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/craftandcode/your-first-program** and click import
+## Step 1 @showDialog
 
-## Blocks preview
+A program or an algorithm is a list of operations required to perform a task. These operations are performed one by one, top to bottom.
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+## Step 2
 
-![A rendered view of the blocks](https://github.com/craftandcode/your-first-program/raw/master/.github/makecode/blocks.png)
+Every program should have its beginning and its end. There are blocks that tell Micro:bit when to start your program. One of these is a ``||basic.forever||`` block. Can you see it on screen?
 
-#### Metadata (used for search, rendering)
+## Step 3 @showhint
 
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+let's program Micro:bit to say ' Hello! '. Search your toolbox to find this block: ``||basic.show string||`` and add it to your program.
+```diffblocks
+basic.forever(function () {
+})
+----------
+basic.forever(function () {
+    basic.showString("Hello!")
+})
+```
+## Step 4
+
+Ready? Wonderful! Now download your code to Micro:bit using the ``|Download|`` button (you may have to click ``|....|`` and pair your device the first time) and enjoy watching your first program in action!
+
+## Step 5
+### Do it yourself
+Change the appearing text by editing text in the ``||basic.show string||`` block. 
+```blocks
+basic.forever(function () {
+    basic.showString("Any other text")
+})
+```
+## Step 6
+### Do it yourself
+Make text to show only once by replacing ``||basic.forever||`` with ``||basic.on start||``.
+```blocks
+basic.showString("Hello!")
+```
+
+## Step 7
+Completed all the tasks? Great! You have learned to display text with Micro:bit!
