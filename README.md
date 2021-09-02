@@ -50,7 +50,7 @@ basic.forever(function () {
 ```
 ## Step 6
 ### Do it yourself
-Make text to show only once by replacing ``||basic.forever||`` with ``||basic.on start||``.
+Make text to show only once by replacing ``||basic.forever||`` with ``||basic.on start||``. Can you tell what's changed?
 ```blocks
 basic.showString("Hello!")
 ```
